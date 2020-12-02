@@ -1,0 +1,49 @@
+CURSO
+LARAVEL 7 - CREA APLICACIONES Y SITIOS WEB CON PHP Y MVC
+UDEMY
+SEGUNDA SECCION PLATAFORMA DE EMPLEOS
+
+- INSTALAR
+laravel proyecto devjobs
+crear BD devjobs
+composer require laravel/ui
+php artisan ui:auth
+php artisan ui vue
+    npm install && npm run dev
+
+tailwind css (estilos)
+    npm install --save-dev tailwindcss laravel-mix-tailwind
+    npx tailwindcss init
+    * configurar en webpack.mix
+
+idioma
+composer require laraveles/spanish
+php artisan laraveles:install-lang
+    * actualizar en config/app.php la variable 'locale' => 'es'
+
+Email de confirmacion - video 139
+    confugracion de email para este servicio
+
+- MediumEditor (manejador de textarea)
+    cdn
+
+- dropzone (manejador de imagenes)
+    cdn
+
+* NOTA: conocer los metodos que tiene Carbon para laravel
+
+- lightbox2
+    npm install lightbox2 --save
+    * se configura en app.js y en webpack.mix.js
+    * se agrega el css desde cdnjs
+
+* NOTA para mensajes de candidatos se usa controlador, modelo y migracion(tabla) independiente
+
+- notificaciones de laravel, enviar un mail para notificar
+    php artisan make:notification nombreNotificacion
+
+    se configura en el controlador la ejecucion y datos a mandar, y en la notificacion los
+    mensajes que saldrán en el email
+
+- almacenar las notificaciones
+    php artisan notifications:table
